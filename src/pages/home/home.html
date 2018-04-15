@@ -1,0 +1,33 @@
+<ion-content class="white">
+  <header>
+    <div class="logo"></div>
+    <!--{logo here}-->
+  </header>
+  <div class="search">
+    <!--{search here}-->
+    <div id="searchBtn" (click)="loadPage('search');">
+      <span style="float: left">Search</span>
+      <ion-icon name="search"></ion-icon>
+    </div>
+  </div>
+  <div class="sections">
+    <ul>
+        <li class="half">
+          <span class="yellow" (click)="loadPage('news');">
+            <span class="button_icon_base button_icon_news">News Feed</span>
+          </span>
+        </li>
+        <li class="half">
+          <span class="red" (click)="loadPage('navigation', 'literature');">
+            <span class="button_icon_base button_icon_literature">Literature</span>
+          </span>
+        </li>
+        <li class="full">
+          <span class="blue" (click)="loadPage('navigation', 'product');">
+            <span class="button_icon_base button_icon_product">Products</span>
+          </span>
+        </li>
+        <!-- <li class="full"><span (click)="loadPage('viewer', 'assets/sample.pdf');">Sample</span></li> -->
+    </ul>
+  </div>
+</ion-content>

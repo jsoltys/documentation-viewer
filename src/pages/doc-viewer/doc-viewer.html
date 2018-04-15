@@ -1,0 +1,23 @@
+<!--
+  Generated template for the DocViewerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{document_title}}</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentSocialAction($event);">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <pdf-viewer [src]="document_url" [page]="page" [zoom]="document_zoom" style="width: 100%;"></pdf-viewer>
+</ion-content>

@@ -1,0 +1,4 @@
+<ion-list no-lines class="doc-viewer-menu">
+    <button ion-item (click)="shareDocument()">Share</button>
+    <button ion-item (click)="printDocument()" *ngIf="printable">Print</button>
+</ion-list>

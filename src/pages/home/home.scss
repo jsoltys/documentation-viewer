@@ -1,0 +1,159 @@
+page-home {
+    // Shared elements
+    header
+    {
+        margin: 4em 0px 2em;
+        height: 14em;
+        box-sizing: border-box;
+    }
+
+    .search
+    {
+        padding: 2em 0px 3em 0px;
+        margin: 0px 0.75em;
+    }
+    
+
+    .sections
+    {
+        padding: 0;
+    }
+    .sections > ul
+    {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .sections > ul > li
+    {
+        float: left;
+        width: calc( 100vw - ( 100vw - 100% ));
+        text-align: right;
+
+        box-sizing: border-box;
+    }
+    .sections > ul > li.half
+    {
+        width: calc( 50vw - (( 100vw - 100% ) / 2 ));
+    }
+
+    .sections > ul > li > span
+    {
+        display: block;
+        margin: 0.75em;
+        border-radius: 0.5em;
+        overflow: hidden;
+    }
+    .sections > ul > li > span > span
+    {
+        padding: 3em 0.5em 0.25em 0px;
+        display: block;
+    }
+
+    // Gray backdrop view
+    ion-content.white {
+        background: rgb( 248, 247, 248 );
+    }
+    ion-content.white header > .logo {
+        height: 100%;
+        margin: 0px 2.5em;
+        background: url('../assets/imgs/logo/composites-color.png') center no-repeat;
+        background-size: contain;
+    }
+    ion-content.white #searchBtn
+    {
+        background-color: transparent;
+        border-radius: 1em;
+        color: rgba( 0, 0, 0, 0.5 );
+        text-align: right;
+        padding: 0.375em 1em;
+        box-shadow: 0px 1px 5px rgba( 0, 0, 0, 0.5 );
+    }
+
+    .white .sections > ul > li > span
+    {
+        background-color: rgba( 255, 255, 255, 1 );
+        box-shadow: 0px 1px 5px rgba( 0, 0, 0, 0.5 );
+        color: white;
+    }
+    ion-content.white .sections > ul > li > span.yellow
+    {
+        background: linear-gradient( 190deg, rgb( 247, 217, 12 ) 0%, rgb( 247, 177, 18 ) 50%, rgb( 247, 133, 10) 100% );
+        box-shadow: 0px 1px 5px rgba( 0, 0, 0, 0.5 );
+    }
+    ion-content.white .sections > ul > li > span.blue
+    {
+        background: linear-gradient( 200deg, rgb( 30, 194, 255 ) 0%, rgb( 0, 128, 226 ) 70%, rgb( 0, 112, 226) 100%);
+        box-shadow: 0px 1px 5px rgba( 0, 0, 0, 0.5 );
+    }
+    ion-content.white .sections > ul > li > span.red
+    {
+        background: linear-gradient( 200deg, rgb( 254, 73, 73 ) 0%, rgb( 216, 36, 71) 100%);
+        box-shadow: 0px 1px 5px rgba( 0, 0, 0, 0.5 );
+    }
+
+    ion-content.white .button_icon_news
+    {
+      background-image: url('../assets/imgs/buttons/white-circle-news.png');
+    }
+    ion-content.white .button_icon_literature
+    {
+      background-image: url('../assets/imgs/buttons/white-circle-literature.png');
+    }
+    ion-content.white .button_icon_product
+    {
+      background-image: url('../assets/imgs/buttons/white-circle-product.png');
+    }
+
+
+
+    // Blue backdrop view
+    ion-content.blue {
+        background: linear-gradient( to bottom, #1064a2 0%, #143c75 100% );
+    }
+    ion-content.blue header > .logo {
+        height: 100%;
+        margin: 0px 2.5em;
+        background: url('../assets/imgs/logo/composites-white.png') center no-repeat;
+        background-size: contain;
+    }
+    ion-content.blue #searchBtn
+    {
+        background-color: rgba(0, 0, 0, 0.25);
+        border-radius: 1em;
+        color: rgba( 255, 255, 255, 0.5 );
+        text-align: right;
+        padding: 0.375em 1em;
+    }
+    
+    ion-content.blue .sections > ul > li > span
+    {
+        background-color: rgba( 255, 255, 255, 1 );
+        box-shadow: 0px 1px 5px rgba( 0, 0, 0, 1 );
+    }
+
+    ion-content.blue .button_icon_news
+    {
+      background-image: url('../assets/imgs/buttons/yellow-circle-news.png');
+    }
+    ion-content.blue .button_icon_literature
+    {
+      background-image: url('../assets/imgs/buttons/red-circle-literature.png');
+    }
+    ion-content.blue .button_icon_product
+    {
+      background-image: url('../assets/imgs/buttons/blue-circle-products.png');
+    }
+
+
+
+
+
+
+
+    
+    .toolbar
+    {
+        background-color: rgba( 255, 255, 255, 0.25 ) !important;
+    }
+}
